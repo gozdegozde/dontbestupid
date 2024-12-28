@@ -15,7 +15,7 @@ function HomePage() {
       <p>
         Life happens. Sometimes we do things that make us question our entire existence. If this is one of those moments, don’t sweat it—you’re definitely not alone. In fact, we’ve all been there! So, throw your hands up, embrace the chaos, and wear that mistake like a badge of honor!
       </p>
-      <Link to="/next"> {/* Link to NextPage route */}
+      <Link to="/slap"> {/* Link to NextPage route */}
         <button>
           If you did something stupid, you deserved this. Click here.
         </button>
@@ -29,7 +29,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} /> {/* Home page route */}
-      <Route path="/next" element={<NextPage />} /> {/* Next page route */}
+      <Route path="/slap" element={<NextPage />} /> {/* Next page route */}
     </Routes>
   );
 }
