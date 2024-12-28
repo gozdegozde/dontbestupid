@@ -49,6 +49,7 @@ video {
   max-width: 800px; /* Restrict the width of the video */
   border-radius: 8px; /* Rounded corners */
   object-fit: cover; /* Ensure proper scaling of video */
+  cursor: pointer; /* Make sure it's clear the video is interactive */
 }
 
 /* Button styles for neon effect */
@@ -95,6 +96,7 @@ button:hover {
   video {
     max-width: 100%; /* Make video fully responsive on mobile */
     height: auto; /* Ensure the video maintains aspect ratio */
+    object-fit: contain; /* Ensure the video fits well inside the container */
   }
 }
 
@@ -115,5 +117,10 @@ button:hover {
 
   .container {
     padding: 10px; /* More compact padding for smaller devices */
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
   }
 }

@@ -64,7 +64,11 @@ function NextPage() {
 
       {/* Embed the video (now from public folder) */}
       <div className="video-container">
-        <video ref={videoRef} width="80%" controls>
+        <video
+          ref={videoRef}
+          width="80%"
+          onClick={handleButtonClick} // Handle video click
+        >
           <source src="/assets/slap.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
