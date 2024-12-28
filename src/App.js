@@ -6,7 +6,7 @@ import NextPage from './NextPage'; // Import NextPage component
 function HomePage() {
   // Set the page title dynamically
   useEffect(() => {
-    document.title = "Home Page - Well Deserved!";
+    document.title = "Slapper!";
   }, []);
 
   return (
