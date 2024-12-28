@@ -50,6 +50,7 @@ video {
   border-radius: 8px; /* Rounded corners */
   object-fit: cover; /* Ensure proper scaling of video */
   cursor: pointer; /* Make sure it's clear the video is interactive */
+  touch-action: none; /* Prevent any default behavior on touch */
 }
 
 /* Button styles for neon effect */
@@ -75,7 +76,6 @@ button:hover {
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
-  /* Adjust container padding and text for smaller screens */
   .container {
     padding: 15px;
   }
@@ -101,24 +101,6 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  /* For very small devices like phones in portrait mode */
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  button {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-
-  .container {
-    padding: 10px; /* More compact padding for smaller devices */
-  }
-
   video {
     max-width: 100%;
     height: auto;

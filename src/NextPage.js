@@ -34,7 +34,10 @@ function NextPage() {
   }, []);
 
   // Function to handle button click, increment count, and play video
-  const handleButtonClick = () => {
+  const handleButtonClick = (event) => {
+    // Prevent the default behavior of opening the video in a new tab
+    event.preventDefault();
+
     setClickCount(prevCount => {
       const newCount = prevCount + 1;
       // Save the updated count to localStorage
@@ -67,7 +70,8 @@ function NextPage() {
         <video
           ref={videoRef}
           width="80%"
-          onClick={handleButtonClick} // Handle video click
+          onClick={handleButtonClick} // Handle video click to prevent separate opening
+          controls={false} // Remove native controls
         >
           <source src="/assets/slap.mp4" type="video/mp4" />
           Your browser does not support the video tag.
