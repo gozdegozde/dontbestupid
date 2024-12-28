@@ -94,6 +94,7 @@ button:hover {
 
   video {
     max-width: 100%; /* Make video fully responsive on mobile */
+    height: auto; /* Ensure the video maintains aspect ratio */
   }
 }
 
@@ -110,5 +111,9 @@ button:hover {
   button {
     padding: 10px 20px;
     font-size: 14px;
+  }
+
+  .container {
+    padding: 10px; /* More compact padding for smaller devices */
   }
 }
