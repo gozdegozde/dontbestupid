@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import { Routes, Route, Link } from "react-router-dom";  // Import Routes, Route, Link
-import NextPage from './NextPage'; // Import NextPage component
+import { Routes, Route, Link } from "react-router-dom";  
+import NextPage from './NextPage';
 
-// Home Page Component
+
 function HomePage() {
-  // Set the page title dynamically
   useEffect(() => {
     document.title = "Slapper!";
   }, []);
@@ -15,7 +14,7 @@ function HomePage() {
       <p>
         Life happens. Sometimes we do things that make us question our entire existence. If this is one of those moments, don’t sweat it—you’re definitely not alone. In fact, we’ve all been there! So, throw your hands up, embrace the chaos, and wear that mistake like a badge of honor!
       </p>
-      <Link to="/slap"> {/* Link to NextPage route */}
+      <Link to="/slap"> 
         <button>
           If you did something stupid, you deserved this. Click here.
         </button>
@@ -24,12 +23,11 @@ function HomePage() {
   );
 }
 
-// Main App Component with Routing
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} /> {/* Home page route */}
-      <Route path="/slap" element={<NextPage />} /> {/* Next page route */}
+      <Route path="/" element={<HomePage />} />
+      <Route path="/slap" element={<NextPage />} />
     </Routes>
   );
 }
